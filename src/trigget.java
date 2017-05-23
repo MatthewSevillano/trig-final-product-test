@@ -22,38 +22,18 @@ public class trigget {
 			if (A !=0 && a!= 0&& b!=0){
 				 B=trig.sinLawAngle(A, a, b);
 				System.out.format("angle b is %,.02f degress",B);
-				 A=trig.sinLawSide(A, b, B);
-				 System.out.format("\nangle a is %,.02f degress",A);
-			//System.out.format("your answer is %,.02f",answer1);
+				 C=180-(A+B);
+				 System.out.format("\nangle c is %,.02f degress",C);
+				 c=trig.sinLawSide(A, a, C);
+				 System.out.format("\nside c is %,.02f",c);
 			
-			//System.out.println("enter alpha angle"); 
-			//double A = in.nextDouble();
-			//System.out.println("enter alpha length");
-			//double a=in.nextDouble();
-			//System.out.println("enter side b length");
-			//double b=in.nextDouble();
-			//double answer2=trig.sinLawAngle(A, a, b);
-			//System.out.format("your answer is %,.02f",answer2+" degrees");
-
-			//System.out.println("enter length a");
-			//double A = in.nextDouble();
-			//System.out.println("enter length b");
-			//double b=in.nextDouble();
-			//System.out.println("enter angle c");
-			//double c=in.nextDouble();
-			//double answer3=trig.cosLawSide(A, b, c);
-			//		System.out.format("your answer is %,.02f",answer3);
-			//		System.out.println("enter the side length you want to find the angle with");
-			//		double a=in.nextDouble();
-			//		System.out.println("enter length b");
-			//			double b=in.nextDouble();
-			//		System.out.println("enter length a");
-			//		double c=in.nextDouble();
-			//		double answer4=trig.cosLawAngle(a, b, c);
-			//		System.out.format("the angle of your selected side length is %,.02f",answer4);
+			}else if (C!=0 && b!=0 && c!=0){
+				c=trig.cosLawSide(A, b, c);
+				System.out.format("c is %,.02f",c);
+				
+			}
 		}
 	}
-}
 
 
 
