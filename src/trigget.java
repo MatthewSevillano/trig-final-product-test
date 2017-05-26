@@ -27,12 +27,12 @@ public class trigget {
 				 c=trig.sinLawSide(A, a, C);
 				 System.out.format("\nside c is %,.02f",c);
 			
-			}else if (a!=0 && b!=0 && C!=0){
+			} if (a!=0 && b!=0 && C!=0){
 				c=trig.cosLawSide(C, b, a);
 				System.out.format("c is %,.02f",c);
-				C=trig.cosLawAngle(c,b,a);
-				System.out.format("\nC is %,.02f degress",C);
-			}else if (B!=0 && b!=0 && c!=0){
+				A=trig.sinLawAngle(C,b,c);
+				System.out.format("\nA is %,.02f degress",A);
+			} if (B!=0 && b!=0 && c!=0){
 				c=trig.cosLawSide(B, b, c);
 				System.out.format("c is %,.02f",c);
 			}
